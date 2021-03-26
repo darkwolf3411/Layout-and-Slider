@@ -1,0 +1,329 @@
+.graphicks {
+    height: 100vh;
+}
+.graphicks__container {
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: fit-content;
+}
+
+.graphicks__info-sect {
+    position: relative;
+}
+
+.graphicks__info {
+    width: 347px;
+    margin: 0 auto;
+}
+
+.graphicks__info-sect h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.graphicks__info-sect span {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.graphicks__info-sect .graphicks__glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    filter: blur(150px);
+    transform: rotate(5.78deg);
+    z-index: -1;
+}
+
+.graphicks__list-diagramm {
+    position: relative;
+}
+
+.graphicks__list-diagramm .graphicks__el {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.graphicks__list-diagramm *:nth-child(1) {
+    top: 320px;
+    left: 500px;
+}
+
+.graphicks__list-diagramm *:nth-child(2) {
+    top: 0;
+    left: 200px;
+}
+
+.graphicks__list-diagramm *:nth-child(3) {
+    top: 0;
+    left: 500px;
+}
+
+.graphicks__list-diagramm *:nth-child(4) {
+    top: 226px;
+    left: 242px;
+}
+
+.graphicks__list-diagramm *:nth-child(5) {
+    top: 123px;
+    left: 319px;
+}
+
+.graphicks__list-diagramm *:nth-child(6) {
+    top: 75px;
+    left: 76px;
+}
+
+.graphicks__list-diagramm *:nth-child(7) {
+    top: -200px;
+    left: 390px;
+}
+
+
+
+@media (min-width: 375px),
+(max-width: 375px) {
+    .graphicks__info-sect h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .graphicks__info-sect span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .graphicks {
+        height: 56vh;
+    }
+
+    .graphicks__container {
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, min-content);
+        align-items: center;
+        grid-gap: 0px;
+        max-width: 100%;
+    }
+
+    .graphicks__info-sect {
+        width: 328px;
+        text-align: left;
+        margin: 15px;
+    }
+
+    .graphicks__list-diagramm {
+        height: 311px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(1) {
+        top: 202px;
+        left: 163px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(2) {
+        top: 67px;
+        left: 36px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(3) {
+        top: 10px;
+        left: 270px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(4) {
+        top: 110px;
+        left: 128px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(5) {
+        top: 50px;
+        left: 190px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(7) {
+        top: 140px;
+        left: -40px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(6) {
+        display: none;
+    }
+
+    .graphicks__list-diagramm *:nth-child(1)>img {
+        width: 296px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(2)>img {
+        width: 109px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(3)>img {
+        width: 86px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(4)>img {
+        width: 91px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(5)>img {
+        width: 90px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(7)>img {
+        width: 144px;
+    }
+}
+
+@media (min-width: 1035px) {
+    .graphicks {
+        height: 60vh;
+    }
+
+    .graphicks__container {
+        margin: 0 auto;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        width: 828px;
+        margin-top: 100px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(7) {
+        top: 10px;
+        left: 270px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(5) {
+        top: 110px;
+        left: 130px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(4) {
+        top: 160px;
+        left: 68px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(3) {
+        top: 50px;
+        left: 199px;
+    }
+}
+
+@media (min-width: 1335px) {
+    .graphicks {
+        height: 100vh;
+    }
+
+    .graphicks__container {
+        margin: 0 auto;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        width: fit-content;
+        overflow-x: hidden;
+        height: 100%;
+        margin-top: 20%;
+    }
+
+    .graphicks__info-sect {
+        position: relative;
+        width: 470px;
+        height: 100%;
+    }
+
+    .graphicks__info {
+        position: absolute;
+        top: -40px;
+        left: 90px;
+        width: 497px;
+        margin: 0 auto;
+    }
+
+    .graphicks__info-sect h2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 51px;
+        line-height: 62px;
+        color: #FFFFFF;
+    }
+
+    .graphicks__info-sect span {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .graphicks__info-sect .graphicks__glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        filter: blur(150px);
+        transform: rotate(5.78deg);
+        z-index: -1;
+    }
+
+    .graphicks__list-diagramm {
+        position: relative;
+    }
+
+    .graphicks__list-diagramm .graphicks__el {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .graphicks__list-diagramm .graphicks__el>img {
+        width: unset;
+    }
+
+    .graphicks__list-diagramm *:nth-child(1) {
+        top: 320px;
+        left: 500px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(2) {
+        top: 0;
+        left: 200px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(3) {
+        top: 0;
+        left: 500px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(4) {
+        top: 226px;
+        left: 242px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(5) {
+        top: 123px;
+        left: 319px;
+    }
+
+    .graphicks__list-diagramm *:nth-child(6) {
+        top: 75px;
+        left: 76px;
+        display: block;
+    }
+
+    .graphicks__list-diagramm *:nth-child(7) {
+        top: -200px;
+        left: 390px;
+    }
+}

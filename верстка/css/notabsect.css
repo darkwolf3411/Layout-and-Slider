@@ -1,0 +1,32 @@
+.notab-phone-section{
+    display: flex;
+    background-image: url(../img/notabsection/bg1.png);
+    background-size: cover;
+    height: 1250px;
+    align-items: center;
+}
+.notab-phone-section__container{
+    position: relative;
+    width: 859px;
+    height: 429px;
+    margin: 0 auto;
+}
+.notab-phone-section__container *:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.notab-phone-section__container *:nth-child(2){
+    position: absolute;
+    top: 28px;
+    left: 85px;
+    right: 0;
+    bottom: 0;
+}
+@media (max-width: 940px){
+    .notab-phone-section{
+        display: none;
+    }
+}
