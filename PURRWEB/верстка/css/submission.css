@@ -1,0 +1,266 @@
+.submission {
+    position: relative;
+    height: 100vh;
+}
+
+.submission h2 {
+    position: relative;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 62px;
+}
+
+.submission h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #F101BF;
+    opacity: 1;
+    filter: blur(70px);
+    z-index: -10;
+}
+
+.submission__right-sect {
+    position: absolute;
+    right: 243px;
+    top: 175px;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    align-items: center;
+}
+
+.submission__right-sect>.glow {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.submission__right-sect span {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.submission .submission__phone-two {
+    display: none;
+}
+@media (min-height: 600px){
+    .submission {
+        height: 120vh;
+    }
+}
+@media (min-width: 1500px) {
+    .submission__container{
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .submission {
+        height: 120vh;
+    }
+    .submission .submission__phone{
+        display: none;
+    }
+    .submission .submission__phone-two{
+        display: block;
+        width: 41%;
+        position: absolute;
+        top: -55px;
+        left: 100px;
+    }
+}
+@media (max-width: 1441px) {
+    .submission .submission__phone-two {
+        position: absolute;
+        display: none;
+        top: -148px;
+        left: -160px;
+        transform: rotate(90deg);
+        width: 706px;
+    }
+
+    .submission__right-sect{
+        right: 133px;
+    }
+    .submission__phone {
+        display: block;
+    }
+}
+@media (max-width: 1240px) {
+    .submission__phone{
+        display: none;
+    }
+    .submission .submission__phone-two{
+        display: block;
+    }
+}
+@media (max-width: 1111px) {
+    .submission .submission__phone-two {
+        top: -148px;
+    }
+}
+
+@media (max-width: 1155px) {
+    .submission__right-sect {
+        right: 120px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .submission__right-sect {
+        right: 110px;
+    }
+
+    .submission .submission__phone-two {
+        left: 0px;
+        top: -58px;
+        width: 586px;
+        transform: none;
+        animation: phone-rotate .5s;
+    }
+
+    @keyframes phone-rotate {
+        0% {
+            transform: rotate(90deg);
+        }
+
+        25% {
+            transform: rotate(67.5deg);
+        }
+
+        50% {
+            transform: rotate(45deg);
+        }
+
+        75% {
+            transform: rotate(22.5deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media (max-width: 915px) {
+    .submission__right-sect {
+        right: 40px;
+    }
+
+    .submission .submission__phone-two {
+        left: 0px;
+        top: -58px;
+        width: 586px;
+        animation: none;
+    }
+}
+
+@media (max-width: 870px) {
+    .submission__right-sect {
+        right: 108px;
+    }
+
+    .submission .submission__phone-two {
+        left: 0px;
+        top: -41px;
+        width: 516px;
+    }
+
+    .submission h2 {
+        font-size: 33px;
+        line-height: 29px;
+    }
+
+    .submission__right-sect span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 811px) {
+    .submission h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 190px;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #F101BF;
+        opacity: 1;
+        filter: blur(40px);
+        z-index: -10;
+    }
+    .submission__right-sect {
+        right: 78px;
+    }
+}
+
+@media (max-width: 776px) {
+    .submission__right-sect {
+        top: 45px;
+        left: 8px;
+    }
+
+    .submission .submission__phone-two {
+        right: unset;
+        left: 0px;
+        top: 288px;
+        width: 346px;
+    }
+
+    .submission h2 {
+        font-size: 33px;
+        line-height: 29px;
+    }
+
+    .submission h2 br {
+        display: none;
+    }
+
+    .submission__right-sect span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .submission {
+        width: 375px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 470px) {
+    
+    .submission .submission__phone-two {
+        top: 249px;
+    }
+
+    .submission__right-sect {
+        top: 0;
+        left: 15px;
+    }
+}
+
+@media (max-width: 776px) {
+    .submission h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .submission__right-sect span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+

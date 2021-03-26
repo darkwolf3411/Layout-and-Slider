@@ -1,0 +1,53 @@
+/* IMPORT */
+@import "./css/qr.css";
+@import "./css/cookies.css";
+@import "./css/form.css";
+@import "./css/notabsect.css";
+@import "./css/header.css";
+@import "./css/footer.css";
+@import "./css/graphicks.css";
+@import "./css/longscroll.css";
+@import "./css/membership.css";
+@import "./css/verification.css";
+@import "./css/submission.css";
+@import "./css/qrother.css";
+@import "./css/preloader.css";
+/* IMPORT */
+/* main style */
+.grid{
+    display: grid;
+}
+body{
+    min-width: 375px;
+    cursor: default;
+    margin: 0 auto;
+    background: #000;
+    position: relative;
+    overflow-x: hidden;
+}
+main{
+    display: grid;
+}
+html{
+    position: relative;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.glow{
+    pointer-events: none;
+}
+/* main style */
+body::before{
+    content: "";
+    position: absolute;
+    bottom: 600px;
+    right: -350px;
+    width: 606px;
+    height: 612px;
+    border-radius: 50%;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(110px);
+    transform: rotate(5.78deg);
+    z-index: -10;
+}
